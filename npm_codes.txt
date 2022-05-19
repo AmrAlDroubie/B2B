@@ -1,0 +1,5 @@
+// Font Awesome " npm install --save @fortawesome/fontawesome-free "
+
+// Bootstrap npm i bootstrap@5.2.0-beta1
+
+// Jquery npm i Jquery
