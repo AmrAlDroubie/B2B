@@ -405,7 +405,7 @@ body {
 .leading-ecommerce-box {
     text-align: center;
     border-radius: 24px;
-    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 3px 36px rgba(0, 0, 0, 0.06);
     min-height: 230px;
     display: flex;
     flex-direction: column;
@@ -426,6 +426,77 @@ body {
 
 .show-room {
     background: linear-gradient(230deg, #155ebd 0%, #2575dc 100%);
+}
+
+
+/* ============================ Our Systems ========================== */
+
+.our-systems-menu {
+    background: linear-gradient(154deg, #155ebd 0%, #2575dc 100%);
+    min-height: 660px;
+}
+
+.our-systems-menu ul li {
+    cursor: pointer;
+    display: block;
+    padding: 7px 0 7px 10px;
+}
+
+.our-systems-menu ul li.active {
+    background-color: rgba(255, 255, 255, 38%);
+    border-radius: 5px;
+}
+
+.our-systems-menu ul li:hover {
+    background-color: rgba(255, 255, 255, 38%);
+    border-radius: 5px;
+}
+
+.our-systems-feats li {
+    margin-top: 22px;
+    display: flex;
+}
+
+.our-systems-feats li i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--clr-primary);
+    color: #fff;
+}
+
+.our-systems-feats li span {
+    font-size: 18px;
+}
+
+.our-systems-content-image img {
+    height: 325px;
+    object-fit: cover;
+}
+
+.our-systems .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border-radius: 3px;
+    background-color: #e2e2e2;
+    display: block;
+}
+
+.our-systems .swiper-pagination-bullet-active {
+    background-color: var(--clr-primary);
+}
+
+.our-systems-pag {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    background: #fff;
+    z-index: 333;
 }
 
 
