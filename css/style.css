@@ -431,6 +431,14 @@ body {
 
 /* ============================ Our Systems ========================== */
 
+.our-systems nav span {
+    cursor: pointer;
+}
+
+.our-systems nav span.active {
+    background-color: var(--clr-primary);
+}
+
 .our-systems-menu {
     background: linear-gradient(154deg, #155ebd 0%, #2575dc 100%);
     min-height: 660px;

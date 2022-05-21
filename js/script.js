@@ -61,10 +61,15 @@ const our_program = new Swiper(".our-program-swiper", {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 25,
-    navigation: {
-        nextEl: ".our-program-next",
-        prevEl: ".our-program-prev",
+    breakpoints: {
+        992: {
+            navigation: {
+                nextEl: ".our-program-next",
+                prevEl: ".our-program-prev",
+            },
+        },
     },
+
     autoplay: {
         delay: 1300,
         disableOnInteraction: false,
@@ -137,4 +142,21 @@ our_systems_swiper.on("slideChange", function() {
     if (our_systems_swiper.slides.length == this.activeIndex + 1) {
         our_systems_swiper.mousewheel.disable();
     }
+});
+
+// our systems nav
+const our_system_nav = document.querySelectorAll(".our-systems nav span");
+
+our_system_nav.forEach((ele) => {
+    ele.onclick = function() {
+        if (!this.classList.contains("active")) {
+            this.classList.add("active");
+            let nav_others = our_system_nav.filter(function(e) {
+                e != this;
+            });
+            nav_others.forEach(function(nav_other) {
+                nav_other.classList.remove("active");
+            });
+        }
+    };
 });
