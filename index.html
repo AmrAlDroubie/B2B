@@ -9,7 +9,7 @@
     <!-- FavIcon -->
     <link rel="shortcut icon" href="images/fav.svg" type="image/x-icon">
     <!-- Swiper JS -->
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome  -->
@@ -32,7 +32,8 @@
             <a href="#" class="navbar-brand">
                 <img src="images/logo.svg" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="nav">
@@ -55,7 +56,7 @@
 
     <!-- ======================== Start Landing ==================== -->
     <header class="landing back-secondry py-4">
-        <div class="container">
+        <div class="container px-0 overflow-hidden">
             <div class="swiper landing-swiper">
                 <div class="swiper-wrapper  py-2">
                     <!-- slide -->
@@ -67,14 +68,19 @@
                                         Get <br class="d-lg-block d-none"> The Best Solutions
                                     </h1>
                                     <p class="mb-4 text-white">
-                                        A Vast Set Of Products To Enhance Your Business's Productivity , Profitability , And Mobility !
+                                        A Vast Set Of Products To Enhance Your Business's Productivity , Profitability ,
+                                        And Mobility !
                                     </p>
-                                    <a href="#" class=" d-lg-inline-block d-block mt-2 text-white text-center rounded-3 rounded-sm-5  back-primary py-lg-2 py-2 px-4">
-                                        Our Hardware
-                                    </a>
-                                    <a href="#" class="d-lg-inline-block d-block mt-2 text-white bg-transparent text-center rounded-3 rounded-sm-5 border border-2 border-white ms-lg-3 ms-0 py-lg-2 py-2 px-3">
-                                        Our Software
-                                    </a>
+                                    <div class="d-flex justify-content-lg-start justify-content-center  landing-links">
+                                        <a href="#"
+                                            class=" d-block  mt-2 text-white text-center  rounded-3 rounded-sm-5  back-primary py-2 px-4">
+                                            Our Hardware
+                                        </a>
+                                        <a href="#"
+                                            class="d-block   mt-2 text-white bg-transparent text-center rounded-3 rounded-sm-5 border border-2 border-white ms-3 py-2 px-3">
+                                            Our Software
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7 mb-2 order-lg-2 order-1">
@@ -197,31 +203,39 @@
 
 
     <!-- ======================== Start floorstand ====================== -->
-    <section class="floor-stand my-5">
+    <section class="floor-stand my-5 pt-5">
         <div class="container">
+            <h2 class="fw-bold fs-2 mb-3 text-center section-title-effect">
+                Our <span class="clr-primary">Hardware</span>
+            </h2>
             <div class="swiper floor-swiper">
                 <div class="swiper-wrapper">
                     <!-- slide -->
                     <div class="swiper-slide">
                         <div class="row align-items-center  mx-auto floor-stand-swiper  ps-lg-5 ps-2 rounded-5">
-                            <div class="col-12 col-lg-6 mb-2 floor-stand-text order-lg-1 order-2">
+                            <div
+                                class="col-12 col-lg-6 mb-2 floor-stand-text order-lg-1 order-2 text-lg-start text-center">
                                 <h3 class="text-white fs-2 fw-bold">
-                                    Advertising FloorStand Enclosure and Digital Signage Display – Samsung
+                                    Printer
                                 </h3>
                                 <p class="text-white">
                                     FloorStand Enclosure + Samsung Digital Signage
                                 </p>
-                                <a href="#" class="d-inline-block mt-2 border border-white rounded-5 text-center fs-5 py-2 px-4 text-white">
-                                    See All
-                                </a>
+                                <div class="text-lg-start text-center mb-3">
+                                    <a href="#"
+                                        class="d-inline-block mt-2 border border-white rounded-5 text-center fs-5 py-2 px-4 text-white">
+                                        See All
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-6 mb-2 order-lg-2 order-1">
+                            <div class="col-12 col-lg-6 mb-2 order-lg-2 order-1 py-2">
                                 <div class="floor-stand-image"><img src="images/floor_stand.png" alt=""></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-md-flex d-none index-333 justify-content-between w-100 position-absolute top-50 translate-middle-y">
+                <div
+                    class="d-md-flex d-none index-333 justify-content-between w-100 position-absolute top-50 translate-middle-y">
                     <div class="floor-next"><i class="fas fa-arrow-left"></i></div>
                     <div class="floor-prev"><i class="fas fa-arrow-right"></i></div>
                 </div>
@@ -233,95 +247,192 @@
     <!-- ======================== End floorstand ====================== -->
 
 
+    <!-- ======================== Start Our Brands =====================-->
+    <section class="our-brands d-md-block d-none">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-12 col-lg-2">
+                    <div class="our-brands-title back-primary text-white center-flex fs-3 fw-bold py-5 rounded-4 ">
+                        Brands
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 position-relative h-100">
+                    <div class="swiper our-brands-swiper">
+                        <div class="swiper-wrapper p-4">
+                            <!-- slide -->
+                            <div class="swiper-slide">
+                                <div class="our-brands-box row  align-items-center">
+                                    <div class="col-6 d-md-block d-none">
+                                        <h5 class="fs-3 fw-bold">
+                                            Notebook
+                                        </h5>
+                                        <a href="#"
+                                            class="d-inline-block mt-3 rounded-5 py-2 px-5 back-primary text-white fs-5 ">
+                                            Buy Now
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="image">
+                                            <img src="images/our_brands1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- slide -->
+                            <div class="swiper-slide">
+                                <div class="our-brands-box row align-items-center">
+                                    <div class="col-6 d-md-block d-none">
+                                        <h5 class="fs-3 fw-bold">
+                                            Camera
+                                        </h5>
+                                        <a href="#"
+                                            class="d-inline-block mt-3 rounded-5 py-2 px-5 back-primary text-white fs-5 ">
+                                            Buy Now
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="image">
+                                            <img src="images/our_brands2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================== End Our Brands =====================-->
+
+
+
+    <!-- ======================== Start Our Brands Two ==================== -->
+    <section class="our-brands-2 d-md-none d-block">
+        <div class="container">
+            <div class="swiper our-brands-2-swiper">
+                <div class="swiper-wrapper">
+                    <!-- slide -->
+                    <div class="swiper-slide">
+                        <img src="images/our_brands1.png" alt="">
+                        <img src="images/our_brands2.png" alt="">
+                    </div>
+                    <!-- slide -->
+                    <div class="swiper-slide">
+                        <img src="images/our_brands5.png" alt="">
+                        <img src="images/our_brands4.png" alt="">
+                    </div>
+                    <!-- slide -->
+                    <div class="swiper-slide">
+                        <img src="images/our_brands4.png" class="big" alt="">
+                        <img src="images/our_brands3.png" alt="">
+                    </div>
+                    <!-- slide -->
+                    <div class="swiper-slide">
+                        <img src="images/our_brands1.png" alt="">
+                        <img src="images/our_brands1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================== End Our Brands Two ==================== -->
+
+
+
+
 
     <!-- ======================== Start Our Products ================== -->
     <section class="our-products">
         <div class="container">
             <div class="our-products-content mx-auto">
-                <div class="row">
-                    <div class="col-lg-8 col-12 mb-2">
-                        <div class="row">
+
+                <div class="swiper our-products-swiper">
+                    <div class="swiper-wrapper">
+
+
+                        <div class="swiper-slide">
                             <!-- box -->
-                            <div class="col-6">
-                                <div class="our-products-box">
-                                    <div class="image"><img src="images/our_products1.png" alt=""></div>
-                                    <div class="our-products-box-info">
-                                        <h4>
-                                            Iphones
-                                        </h4>
-                                        <p>
-                                            FloorStand Enclosure + Samsung Digital Signage
-                                        </p>
-                                    </div>
-                                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products1.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Iphones
+                                    </h4>
                                 </div>
-                            </div>
-                            <!-- box -->
-                            <div class="col-6">
-                                <div class="our-products-box">
-                                    <div class="image"><img src="images/our_products2.png" alt=""></div>
-                                    <div class="our-products-box-info">
-                                        <h4>
-                                            Paper
-                                        </h4>
-                                        <p>
-                                            FloorStand Enclosure + Samsung Digital Signage
-                                        </p>
-                                    </div>
-                                    <a href="#"><i class="fas fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <!-- box -->
-                            <div class="col-6">
-                                <div class="our-products-box">
-                                    <div class="image"><img src="images/our_products3.png" alt=""></div>
-                                    <div class="our-products-box-info">
-                                        <h4>
-                                            Calculator
-                                        </h4>
-                                        <p>
-                                            FloorStand Enclosure + Samsung Digital Signage
-                                        </p>
-                                    </div>
-                                    <a href="#"><i class="fas fa-angle-right"></i></a>
-                                </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
                             </div>
 
 
                             <!-- box -->
-                            <div class="col-6">
-                                <div class="our-products-box">
-                                    <div class="image"><img src="images/our_products4.png" alt=""></div>
-                                    <div class="our-products-box-info">
-                                        <h4>
-                                            Keyboards
-                                        </h4>
-                                        <p>
-                                            FloorStand Enclosure + Samsung Digital Signage
-                                        </p>
-                                    </div>
-                                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products2.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Paper
+                                    </h4>
                                 </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
                             </div>
+                        </div>
 
+
+                        <div class="swiper-slide">
+                            <!-- box -->
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products3.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Calculator
+                                    </h4>
+                                </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
+                            <!-- box -->
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products4.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Keyboards
+                                    </h4>
+                                </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-12 mb-2 mt-lg-0 mt-5">
-                        <div class="products-printer px-3 h-100 back-primary text-center rounded-5 text-white pt-4">
-                            <img src="images/products_printer.png" class="d-block my-4 mx-auto" alt="">
-                            <h4 class="fs-4 fw-bold mt-3">
-                                Printer
-                            </h4>
-                            <p class="mt-5">
-                                FloorStand Enclosure + Samsung Digital Signage The Solutions That Are Perfect For Your Shop!
-                            </p>
-                            <a href="#" class="fs-5 d-inline-block mt-5 mb-lg-0 mb-4 text-white border border-white rounded-5 px-5 py-2">Buy
-                                Now</a>
+
+                        <div class="swiper-slide">
+                            <!-- box -->
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products5.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Notebook
+                                    </h4>
+                                </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
+                            <!-- box -->
+                            <div class="our-products-box">
+                                <div class="image"><img src="images/our_products6.png" alt=""></div>
+                                <div class="our-products-box-info">
+                                    <h4>
+                                        Camera
+                                    </h4>
+                                </div>
+                                <a href="#"><i class="fas fa-angle-right"></i></a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -333,8 +444,14 @@
 
     <section class="our-program my-5 py-5 back-primary position-relative">
         <div class="container">
+            <h2 class="text-white fs-3 fw-bold text-center">
+                Our Softwares
+            </h2>
+            <p class="text-white fs-5 text-center">
+                FloorStand Enclosure + Samsung Digital Signage
+            </p>
             <div class="row ">
-                <div class="col-12 ">
+                <div class="col-12">
                     <div class="swiper our-program-swiper">
                         <div class="swiper-wrapper">
                             <!-- swiper slide -->
@@ -346,7 +463,8 @@
                 </div>
             </div>
         </div>
-        <div class="our-program-next d-md-flex d-none index-333 position-absolute top-50 translate-middle-y start-0 ms-3">
+        <div
+            class="our-program-next d-md-flex d-none index-333 position-absolute top-50 translate-middle-y start-0 ms-3">
             <i class="fas fa-angle-left"></i>
         </div>
         <div class="our-program-prev d-md-flex d-none index-333 position-absolute top-50 translate-middle-y end-0 me-3">
@@ -422,9 +540,12 @@
         <div class="container">
             <div class="row mb-3">
                 <div class="col-lg-3 col-12">
-                    <nav class="border border-secondary rounded-3 p-1 text-center d-flex align-items-center justify-content-between">
-                        <span class="active text-white py-lg-2 py-3 px-lg-4 px-5 d-inline-block me-2 rounded-2 fs-5">Restaurant</span>
-                        <span class="d-inline-block clr-primary py-2 px-5 d-inline-block me-2 rounded-2 fs-5">Retails</span>
+                    <nav
+                        class="border border-secondary rounded-3 p-1 text-center d-flex align-items-center justify-content-between">
+                        <span
+                            class="active text-white py-lg-2 py-3 px-lg-4 px-5 d-inline-block me-2 rounded-2 fs-5">Restaurant</span>
+                        <span
+                            class="d-inline-block clr-primary py-2 px-5 d-inline-block me-2 rounded-2 fs-5">Retails</span>
                     </nav>
                 </div>
             </div>
@@ -432,61 +553,26 @@
                 <div class="col-12 col-lg-3">
                     <div class="our-systems-menu ps-3 pe-2 py-3  rounded-4 text-white d-lg-block d-none">
                         <h5 class="ps-2 fs-4 fw-bold">
-                            Our Systems
+                            Restaurant Software + Hardware
                         </h5>
                         <ul>
                             <!-- item -->
                             <li class="mb-1" data-slide-index="0">
-                                Inventory Managment
+                                15KD/Monthly
                             </li>
                             <!-- item -->
                             <li class="mb-1" data-slide-index="1">
-                                Kitchen Managment
+                                8KD/Monthly
                             </li>
                             <!-- item -->
                             <li class="mb-1" data-slide-index="2">
-                                crm
+                                15KD/Monthly
                             </li>
                             <!-- item -->
                             <li class="mb-1" data-slide-index="3">
-                                Waiter
+                                10KD/Monthly
                             </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="4">
-                                Full Hr Management
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="5">
-                                Accounting System
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="6">
-                                E-Commerce
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="7">
-                                Drive-Thru
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="8">
-                                E-Menu
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="9">
-                                Machines And Equipment Tracker
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="10">
-                                Central Kithchen Management
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="11">
-                                Cashier Pos
-                            </li>
-                            <!-- item -->
-                            <li class="mb-1" data-slide-index="12">
-                                Purchasing Support
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -499,139 +585,84 @@
 
                                 <!-- start slide -->
                                 <div class="swiper-slide">
-                                    <img src="images/our_systems_icon1.svg" alt="">
-                                    <p class="my-2 fs-4 fw-bold">
-                                        Inventory<br> Managment
-                                    </p>
-                                    <div class="row mt-3 align-items-center">
-                                        <div class="col-12 col-lg-6 mb-3">
-                                            <ul class="our-systems-feats">
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Quick and easy setup
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Seamless integration between orders and payments
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        PCI compliant security with advanced tokenization
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Built-in advanced fraud protection
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Connect Loyverse Customer Display app
-                                                    </span>
-                                                </li>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <img src="images/our_systems_icon1.svg" alt="">
+                                            <p class="my-2 fs-3 fw-bold">
+                                                15KD/Monthly
+                                            </p>
+                                            <span class="clr-primary fs-4 fw-bold">Hardware</span>
+                                            <div class="d-flex align-items-center my-2">
+                                                <img src="images/res_sol1.png" class="me-3" alt="">
+                                                <span>
+                                                    Sunmi V2S (2 GB + 16GB<br>
+                                                    Memory + NFC + 2D Scanner + Label Printing + 4G LTE)
+                                                </span>
+                                            </div>
+                                            <div class="fs-6 fw-bold">
+                                                1-Yr Restaurant POS Subscription<br>
+                                                Two Users
+                                            </div>
+                                            <ul class="mt-4">
+                                                <li class="fs-6 clr-pr mb-2">Manage Employees</li>
+                                                <li class="fs-6 clr-pr mb-2">Manage Ingredients</li>
+                                                <li class="fs-6 clr-pr mb-2">Manage Central/Single/Combo Dishes</li>
+                                                <li class="fs-6 clr-pr mb-2">Manage Menus</li>
+                                                <li class="fs-6 clr-pr mb-2">Floor And Table Management</li>
                                             </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-6 mb-3">
-                                            <div class="our-systems-content-image text-end">
-                                                <img src="images/our_system_image1.png" class="rounded-5" alt="">
+                                            <div>
+                                                <h5 class="clr-primary fs-4 fw-bold my-1">Reporting System:</h5>
+                                                <ul>
+                                                    <li class="fs-6 clr-pr mb-2">Cashier Close Report History</li>
+                                                    <li class="fs-6 clr-pr mb-2">Orders Reports</li>
+                                                    <li class="fs-6 clr-pr mb-2">Export All Data In CSV</li>
+                                                    <li class="fs-6 clr-pr mb-2">Taxes Management</li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                                eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                                            </p>
-                                            <a href="#" class="fs-5 text-white text-center rounded-5 py-2 px-4  back-primary d-inline-block">
-                                                See All
-                                            </a>
+
+                                        <div class="col-12 col-lg-6 ">
+                                            <div class="ms-lg-4 ms-0">
+                                                <div>
+                                                    <h5 class="clr-primary fs-4 fw-bold my-1">Cashier POS:</h5>
+                                                    <ul>
+                                                        <li class="fs-6 clr-pr mb-2">Manage Recipe [BOM]</li>
+                                                        <li class="fs-6 clr-pr mb-2">Open Session</li>
+                                                        <li class="fs-6 clr-pr mb-2">Advanced Cash Control</li>
+                                                        <li class="fs-6 clr-pr mb-2">Different Order Types</li>
+                                                        <li class="fs-6 clr-pr mb-2">Basic CRM</li>
+                                                        <li class="fs-6 clr-pr mb-2">Discounts</li>
+                                                        <li class="fs-6 clr-pr mb-2">Split Payment</li>
+                                                        <li class="fs-6 clr-pr mb-2">Refund</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="my-4 mb-5">
+                                                    <h5 class="clr-primary fs-4 fw-bold my-1">Single Inventory
+                                                        Management</h5>
+                                                    <ul>
+                                                        <li class="fs-6 clr-pr mb-2">Inventory Adjustment</li>
+                                                        <li class="fs-6 clr-pr mb-2">Scraping</li>
+                                                        <li class="fs-6 clr-pr mb-2">Low-Stock Monitor</li>
+                                                        <li class="fs-6 clr-pr mb-2">Inventory Reports</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="text-center mt-5">
+                                                    <a href="#"
+                                                        class="d-inline-block back-primary text-white py-2 px-5 rounded-5 fs-5 fw-bold">Buy
+                                                        Now</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end slide -->
 
 
-                                <!-- start slide -->
-                                <div class="swiper-slide">
-                                    <img src="images/our_systems_icon1.svg" alt="">
-                                    <p class="my-2 fs-4 fw-bold">
-                                        Inventory<br> Managment
-                                    </p>
-                                    <div class="row mt-3 align-items-center">
-                                        <div class="col-12 col-lg-6 mb-3">
-                                            <ul class="our-systems-feats">
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Quick and easy setup
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Seamless integration between orders and payments
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        PCI compliant security with advanced tokenization
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Built-in advanced fraud protection
-                                                    </span>
-                                                </li>
-                                                <!-- feat  -->
-                                                <li>
-                                                    <i class="fas fa-check me-2"></i>
-                                                    <span>
-                                                        Connect Loyverse Customer Display app
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-6 mb-3">
-                                            <div class="our-systems-content-image text-end">
-                                                <img src="images/our_system_image1.png" class="rounded-5" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                                                eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                                            </p>
-                                            <a href="#" class="fs-5 text-white text-center rounded-5 py-2 px-4  back-primary d-inline-block">
-                                                See All
-                                            </a>
 
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end slide -->
 
                             </div>
                             <!-- Pagination -->
-                            <div class="our-systems-pag d-flex swiper-pagination py-4"></div>
+                            <!-- <div class="our-systems-pag d-flex swiper-pagination py-4"></div> -->
                         </div>
                     </div>
                 </div>
@@ -651,12 +682,16 @@
                 <div class="col-12 col-lg-6 mb-3">
                     <div class="show-room-text">
                         <p class="fs-2 text-white fw-bold">
-                            Welcome To B2B MERX Showroom. Visit Our Showroom And Take A Closer Look At Our Great Products.
+                            Visit Our Show<br>
+                            Room
                         </p>
-                        <a href="#" class="me-lg-2  fs-4 fw-bold text-white border border-white rounded-3 rounded-sm-5 text-center d-lg-inline-block d-block mt-3 py-2 px-5">Our
-                            Hardware</a>
-                        <a href="#" class="fs-4 text-white border border-1 border-white rounded-3 rounded-sm-5 text-center d-lg-inline-block d-block mt-3 py-2 px-4">
-                            Our Software
+                        <a href="#"
+                            class="me-lg-2  fs-4 fw-bold text-white border border-white rounded-5 text-center d-lg-inline-block d-block mt-3 py-2 px-5">
+                            Book Appointment
+                        </a>
+                        <a href="#"
+                            class="back-primary fs-4 text-white  rounded-5 text-center d-lg-inline-block d-block mt-3 py-2 px-4">
+                            Our Address
                         </a>
                     </div>
                 </div>
@@ -678,7 +713,7 @@
             <div class="row justify-content-around">
                 <div class="col-12 col-md-3 col-lg mb-3">
                     <h6 class="clr-primary fs-5 fw-bold mb-3">
-                        Business Sectors
+                        Business Sectors <i class="d-md-none d-inline-block clr-primary fas fa-angle-down"></i>
                     </h6>
                     <ul>
                         <li><a href="#" class="light-text d-inline-block mb-2">Logistics</a></li>
@@ -690,7 +725,7 @@
                 </div>
                 <div class="col-12 col-md-3 col-lg mb-3">
                     <h6 class="clr-primary fs-5 fw-bold  mb-3">
-                        Trademarks
+                        Trademarks <i class="d-md-none d-inline-block clr-primary fas fa-angle-down"></i>
                     </h6>
                     <ul>
                         <li><a href="#" class="light-text d-inline-block mb-2">Sunmi</a></li>
@@ -703,7 +738,7 @@
                 </div>
                 <div class="col-12 col-md-3 col-lg mb-3">
                     <h6 class="clr-primary fs-5 fw-bold  mb-3">
-                        Sections
+                        Sections <i class="d-md-none d-inline-block clr-primary fas fa-angle-down"></i>
                     </h6>
                     <ul>
                         <li><a href="#" class="light-text d-inline-block mb-2">Phones And Tablets</a></li>
@@ -719,7 +754,7 @@
                 </div>
                 <div class="col-12 col-md-3 col-lg ">
                     <h6 class="clr-primary fs-5 fw-bold mb-3">
-                        Ask The Experts!
+                        Ask The Experts! <i class="d-md-none d-inline-block clr-primary fas fa-angle-down"></i>
                     </h6>
                     <ul>
                         <li><a href="#" class="light-text d-inline-block mb-2">Call Us</a></li>
@@ -757,17 +792,32 @@
 
 
 
-
-
-
-
-
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
+
+
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Main JS -->
     <script src="js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
 </body>
+
+
+
 
 </html>
